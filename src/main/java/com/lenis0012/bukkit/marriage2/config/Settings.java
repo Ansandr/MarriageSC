@@ -1,5 +1,6 @@
 package com.lenis0012.bukkit.marriage2.config;
 
+import cloud.commandframework.services.annotations.Order;
 import com.lenis0012.bukkit.marriage2.internal.MarriagePlugin;
 import com.lenis0012.bukkit.marriage2.internal.data.MarriagePlayer;
 import com.lenis0012.pluginutils.config.mapping.ConfigHeader;
@@ -18,6 +19,8 @@ public class Settings {
     public static final ConfigOption<Boolean> ENABLE_PRIEST = new ConfigOption<>("enable-priests", false);
     @ConfigHeader("Allow a player's gender to be changed multiple times.")
     public static final ConfigOption<Boolean> ALLOW_GENDER_CHANGE = new ConfigOption<>("enable-gender-change", true);
+    public static final ConfigOption<Boolean>  ALLOW_GAY_MARRIAGE = new ConfigOption<>("allow-gay-marriage", false);
+
 
     /**
      * Cooldown

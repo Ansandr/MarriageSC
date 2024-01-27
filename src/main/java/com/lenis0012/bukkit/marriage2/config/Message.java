@@ -59,6 +59,8 @@ public enum Message {
     TELEPORT_UNSAFE("&cThe location you are trying to teleport to is unsafe or obstructed"),
     PARTNER_INVENTORY_FULL("&cYour partner's inventory is full!"),
 
+    GAY_IS_DENIED("&cSame-sex marriage isn't allowed!"),
+
     // COMMANDS
     COMMAND_MARRY("Request a marriage with another player"),
     COMMAND_MARRY_PRIEST("Marry 2 players with eachother"),

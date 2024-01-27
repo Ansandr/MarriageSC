@@ -42,6 +42,17 @@ public class CommandMarry extends Command {
 
             MPlayer mp1 = marriage.getMPlayer(player1);
             MPlayer mp2 = marriage.getMPlayer(player2);
+
+            // Check gender
+            if (!Settings.ALLOW_GAY_MARRIAGE.value()) {
+                if (mp1.getChosenGender() == mp2.getChosenGender()) {
+                    reply(Message.GAY_IS_DENIED, getArg(-1));
+                    return;
+                }
+            }
+
+            if (mp1.getChosenGender() == mp2.getChosenGender())
+
             if(mp1.isMarried() || mp2.isMarried()) {
                 reply(Message.ALREADY_MARRIED);
                 return;
